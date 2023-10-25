@@ -13,7 +13,9 @@ final class HomeViewController: UIViewController {
     //MARK: - UI
     private lazy var defaultButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "defaultButton"), for: .normal)
+        button.backgroundColor = .LTech.whiteColor
+        button.setImage(.LTechImage.defaultButton, for: .normal)
+        button.addTarget(self, action: #selector(defaultButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -25,35 +27,44 @@ final class HomeViewController: UIViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Theme.cell)
         return tableView
     }()
-
+    
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
         setConstrains()
         configureItems()
-        view.backgroundColor = .white
+        view.backgroundColor = .LTech.whiteColor
     }
     
     //MARK: - Set Views
     private func setViews() {
-        view.addSubview(defaultButton)
-        view.addSubview(tableView)
+        view.addAutoLayoutSubviews(defaultButton, tableView)
     }
     
     //MARK: - Configure Items
     private func configureItems() {
         let customBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "update"),
+            image: .LTechImage.update,
             style: .plain,
             target: self,
-            action: nil)
+            action: #selector(updateButtonTapped))
+        
         navigationItem.title = "Лента новостей"
         navigationItem.rightBarButtonItem = customBarButtonItem
-       
+        
+    }
+    
+    //MARK: -  @objc Private Func
+    @objc private func defaultButtonTapped() {
+        print("defaultButtonTapped")
+    }
+    
+    @objc private func updateButtonTapped() {
+        print("updateButtonTapped")
     }
 }
 
@@ -61,10 +72,11 @@ final class HomeViewController: UIViewController {
 extension HomeViewController {
     private func setConstrains() {
         defaultButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(90)
+            make.top.equalToSuperview().inset(100)
             make.leading.equalToSuperview().inset(16)
             make.trailing.equalToSuperview().inset(227)
             make.bottom.equalTo(tableView.snp.top)
+            make.height.equalTo(40)
         }
         
         tableView.snp.makeConstraints { make in
@@ -81,7 +93,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Theme.cell, for: indexPath)
         return cell
     }
 }

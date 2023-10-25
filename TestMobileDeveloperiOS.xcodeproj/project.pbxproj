@@ -7,20 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4417723D2AE96231001CE44E /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772322AE9607C001CE44E /* SF-Pro-Display-Black.otf */; };
+		4417723E2AE96245001CE44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443788372AE81C4A00D20667 /* LaunchScreen.storyboard */; };
+		4417723F2AE96249001CE44E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443788352AE81C4A00D20667 /* Assets.xcassets */; };
+		441772412AE96275001CE44E /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772342AE9607C001CE44E /* SF-Pro-Display-Medium.otf */; };
+		441772422AE96275001CE44E /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772392AE9607C001CE44E /* SF-Pro-Display-Regular.otf */; };
+		441772432AE96275001CE44E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772352AE9607C001CE44E /* SF-Pro-Display-Semibold.otf */; };
+		441772442AE96275001CE44E /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772382AE9607C001CE44E /* SF-Pro-Text-Medium.otf */; };
+		441772452AE96275001CE44E /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772362AE9607C001CE44E /* SF-Pro-Text-Regular.otf */; };
+		441772462AE96275001CE44E /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 441772312AE9607C001CE44E /* SF-Pro-Text-Semibold.otf */; };
 		4437882D2AE81C4900D20667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437882C2AE81C4900D20667 /* AppDelegate.swift */; };
 		4437882F2AE81C4900D20667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437882E2AE81C4900D20667 /* SceneDelegate.swift */; };
 		443788312AE81C4900D20667 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788302AE81C4900D20667 /* HomeViewController.swift */; };
-		443788362AE81C4A00D20667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443788352AE81C4A00D20667 /* Assets.xcassets */; };
-		443788392AE81C4A00D20667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443788372AE81C4A00D20667 /* LaunchScreen.storyboard */; };
 		443788432AE8233C00D20667 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 443788422AE8233C00D20667 /* SnapKit */; };
 		443788452AE8233C00D20667 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 443788442AE8233C00D20667 /* SnapKit-Dynamic */; };
 		443788492AE83BCB00D20667 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788482AE83BCB00D20667 /* DetailViewController.swift */; };
 		4437884B2AE8415000D20667 /* UserTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437884A2AE8415000D20667 /* UserTabBarViewController.swift */; };
 		4437884F2AE843DE00D20667 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437884E2AE843DE00D20667 /* FavoritesViewController.swift */; };
 		443788522AE844FA00D20667 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788512AE844FA00D20667 /* ProfileViewController.swift */; };
+		443788552AE860A500D20667 /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788542AE860A500D20667 /* Extension + UIColor.swift */; };
+		443788572AE864B600D20667 /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788562AE864B600D20667 /* Extension + UIFont.swift */; };
+		4437888B2AE9096200D20667 /* Extensions + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437888A2AE9096100D20667 /* Extensions + UIView.swift */; };
+		4437888D2AE9149400D20667 /* Extension + UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437888C2AE9149400D20667 /* Extension + UIImage.swift */; };
+		443788912AE9221F00D20667 /* Extensions + UIStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788902AE9221F00D20667 /* Extensions + UIStack.swift */; };
+		443788932AE922C600D20667 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788922AE922C600D20667 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441772312AE9607C001CE44E /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		441772322AE9607C001CE44E /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		441772342AE9607C001CE44E /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		441772352AE9607C001CE44E /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		441772362AE9607C001CE44E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		441772382AE9607C001CE44E /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		441772392AE9607C001CE44E /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		443788292AE81C4900D20667 /* TestMobileDeveloperiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobileDeveloperiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4437882C2AE81C4900D20667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4437882E2AE81C4900D20667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +52,12 @@
 		4437884A2AE8415000D20667 /* UserTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarViewController.swift; sourceTree = "<group>"; };
 		4437884E2AE843DE00D20667 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		443788512AE844FA00D20667 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		443788542AE860A500D20667 /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
+		443788562AE864B600D20667 /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
+		4437888A2AE9096100D20667 /* Extensions + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIView.swift"; sourceTree = "<group>"; };
+		4437888C2AE9149400D20667 /* Extension + UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImage.swift"; sourceTree = "<group>"; };
+		443788902AE9221F00D20667 /* Extensions + UIStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIStack.swift"; sourceTree = "<group>"; };
+		443788922AE922C600D20667 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441772302AE96051001CE44E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				441772322AE9607C001CE44E /* SF-Pro-Display-Black.otf */,
+				441772342AE9607C001CE44E /* SF-Pro-Display-Medium.otf */,
+				441772392AE9607C001CE44E /* SF-Pro-Display-Regular.otf */,
+				441772352AE9607C001CE44E /* SF-Pro-Display-Semibold.otf */,
+				441772382AE9607C001CE44E /* SF-Pro-Text-Medium.otf */,
+				441772362AE9607C001CE44E /* SF-Pro-Text-Regular.otf */,
+				441772312AE9607C001CE44E /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		443788202AE81C4800D20667 = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +110,10 @@
 				4437884C2AE8434300D20667 /* HomeViewController */,
 				4437884D2AE8436300D20667 /* FavoritesViewController */,
 				443788502AE844CF00D20667 /* ProfileViewController */,
-				4437884A2AE8415000D20667 /* UserTabBarViewController.swift */,
-				443788372AE81C4A00D20667 /* LaunchScreen.storyboard */,
-				443788352AE81C4A00D20667 /* Assets.xcassets */,
+				4437888F2AE91F0C00D20667 /* TabBar */,
+				443788532AE85FF000D20667 /* Extensions */,
+				441772302AE96051001CE44E /* Fonts */,
+				4437888E2AE917EC00D20667 /* Assets */,
 				4437883A2AE81C4A00D20667 /* Info.plist */,
 			);
 			path = TestMobileDeveloperiOS;
@@ -112,6 +153,36 @@
 			path = ProfileViewController;
 			sourceTree = "<group>";
 		};
+		443788532AE85FF000D20667 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				443788542AE860A500D20667 /* Extension + UIColor.swift */,
+				443788562AE864B600D20667 /* Extension + UIFont.swift */,
+				4437888A2AE9096100D20667 /* Extensions + UIView.swift */,
+				4437888C2AE9149400D20667 /* Extension + UIImage.swift */,
+				443788902AE9221F00D20667 /* Extensions + UIStack.swift */,
+				443788922AE922C600D20667 /* Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4437888E2AE917EC00D20667 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				443788352AE81C4A00D20667 /* Assets.xcassets */,
+				443788372AE81C4A00D20667 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4437888F2AE91F0C00D20667 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4437884A2AE8415000D20667 /* UserTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,7 +192,7 @@
 			buildPhases = (
 				443788252AE81C4800D20667 /* Sources */,
 				443788262AE81C4800D20667 /* Frameworks */,
-				443788272AE81C4800D20667 /* Resources */,
+				4417723B2AE96222001CE44E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -173,12 +244,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		443788272AE81C4800D20667 /* Resources */ = {
+		4417723B2AE96222001CE44E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443788392AE81C4A00D20667 /* LaunchScreen.storyboard in Resources */,
-				443788362AE81C4A00D20667 /* Assets.xcassets in Resources */,
+				441772412AE96275001CE44E /* SF-Pro-Display-Medium.otf in Resources */,
+				441772422AE96275001CE44E /* SF-Pro-Display-Regular.otf in Resources */,
+				441772432AE96275001CE44E /* SF-Pro-Display-Semibold.otf in Resources */,
+				441772442AE96275001CE44E /* SF-Pro-Text-Medium.otf in Resources */,
+				441772452AE96275001CE44E /* SF-Pro-Text-Regular.otf in Resources */,
+				441772462AE96275001CE44E /* SF-Pro-Text-Semibold.otf in Resources */,
+				4417723D2AE96231001CE44E /* SF-Pro-Display-Black.otf in Resources */,
+				4417723F2AE96249001CE44E /* Assets.xcassets in Resources */,
+				4417723E2AE96245001CE44E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,11 +268,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4437884B2AE8415000D20667 /* UserTabBarViewController.swift in Sources */,
+				443788912AE9221F00D20667 /* Extensions + UIStack.swift in Sources */,
+				4437888D2AE9149400D20667 /* Extension + UIImage.swift in Sources */,
 				443788312AE81C4900D20667 /* HomeViewController.swift in Sources */,
+				443788932AE922C600D20667 /* Theme.swift in Sources */,
 				4437882D2AE81C4900D20667 /* AppDelegate.swift in Sources */,
 				4437882F2AE81C4900D20667 /* SceneDelegate.swift in Sources */,
 				443788522AE844FA00D20667 /* ProfileViewController.swift in Sources */,
+				443788552AE860A500D20667 /* Extension + UIColor.swift in Sources */,
+				4437888B2AE9096200D20667 /* Extensions + UIView.swift in Sources */,
 				4437884F2AE843DE00D20667 /* FavoritesViewController.swift in Sources */,
+				443788572AE864B600D20667 /* Extension + UIFont.swift in Sources */,
 				443788492AE83BCB00D20667 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
