@@ -12,28 +12,35 @@ final class DetailViewController: UIViewController {
     
     //MARK: - Unification UI
     private lazy var scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.contentSize = CGSize(width: view.frame.width, height: view.frame.height)
-        scrollView.backgroundColor = .LTech.blueColor
-        return scrollView
+        let view = UIScrollView()
+        view.backgroundColor = .LTech.whiteColor
+        view.showsVerticalScrollIndicator = false
+        return view
+    }()
+    
+    private lazy var contentView: UIView = {
+        let view = UIView()
+        return view
     }()
     
     private lazy var stackViewLabel: UIStackView = {
         let stack = UIStackView()
         stack.alignment = .center
-        stack.distribution = .fill
         stack.axis = .horizontal
         stack.spacing = 5
         return stack
     }()
-
-    private lazy var stackViewDetail: UIStackView = {
-        let stack = UIStackView()
-        stack.alignment = .center
-        stack.distribution = .fill
-        stack.axis = .vertical
-        stack.spacing = 16
-        return stack
+    
+    private lazy var textField: UITextView = {
+        let textView = UITextView()
+        textView.text = """
+В отчёте по исследованию космического аппарата «Новые Горизонты» (New Horizons), запущенном NASA в январе 2006 года.
+На борту аппарата находится телескоп имени Хаббла, который будет исследовать Плутон и его спутники.
+В отчёте говорится, что за время полёта аппарата на орбите Плутона была обнаружена атмосфера с высоким содержанием метана и азотного ангидрида.
+Это открытие подтверждает гипотезу, согласно которой на Плутоне есть лёд, но не объясняет, каким образом он там оказался.
+"""
+        textView.font = UIFont.systemFont(ofSize: 16)
+        return textView
     }()
     
     //MARK: - User Interface
@@ -56,12 +63,14 @@ final class DetailViewController: UIViewController {
         label.numberOfLines = 0
         label.text = "Отчёт Лаборатории реактивного движения (JPL)"
         label.textColor = .LTech.blackColor
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
     
     private lazy var imageViewPhoto: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "link")
+        image.contentMode = .scaleAspectFit
+        image.image = UIImage(named: "satellite")
         return image
     }()
     
@@ -70,14 +79,26 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customButton()
+        setUp()
         setViews()
         setConstrains()
-        view.backgroundColor = .LTech.whiteColor
     }
     
     //MARK: - Set Views
     private func setViews() {
-        
+        view.addAutoLayoutSubview(scrollView)
+        scrollView.addAutoLayoutSubview(contentView)
+        stackViewLabel.addArrangedSubviews(labelDate, labelTime)
+        contentView.addAutoLayoutSubviews(
+            stackViewLabel,
+            titleMainLabel,
+            imageViewPhoto,
+            textField
+        )
+    }
+    
+    private func setUp() {
+        textField.delegate = self
     }
     
     //MARK: - Создаем кастомные кнопки
@@ -118,6 +139,64 @@ final class DetailViewController: UIViewController {
 
 //MARK: - Set Constrains
 extension DetailViewController {
+    
     private func setConstrains() {
+        
+        scrollView.snp.makeConstraints { make in
+            make.top.equalTo(view.snp.top)
+            make.leading.equalTo(view.snp.leading)
+            make.trailing.equalTo(view.snp.trailing)
+            make.bottom.equalTo(view.snp.bottom)
+        }
+        
+        contentView.snp.makeConstraints { make in
+            make.top.equalTo(scrollView.snp.top)
+            make.leading.equalTo(scrollView.snp.leading).inset(16)
+            make.trailing.equalTo(scrollView.snp.trailing).inset(-16)
+            make.bottom.equalTo(scrollView.snp.bottom)
+            make.width.equalTo(scrollView.snp.width)
+        }
+        
+        stackViewLabel.snp.makeConstraints { make in
+            make.top.equalTo(contentView.snp.top)
+            make.leading.equalTo(contentView.snp.leading)
+            make.trailing.equalTo(contentView.snp.trailing)
+        }
+        
+        labelDate.snp.makeConstraints { make in
+            make.width.equalTo(100)
+        }
+        
+        titleMainLabel.snp.makeConstraints { make in
+            make.top.equalTo(stackViewLabel.snp.bottom).inset(-16)
+            make.leading.equalTo(contentView.snp.leading)
+            make.trailing.equalTo(contentView.snp.trailing)
+            make.width.equalTo(contentView.snp.width)
+        }
+        
+        imageViewPhoto.snp.makeConstraints { make in
+            make.top.equalTo(titleMainLabel.snp.bottom).inset(-16)
+            make.leading.equalTo(contentView.snp.leading)
+            make.trailing.equalTo(contentView.snp.trailing)
+            make.width.equalTo(contentView.snp.width)
+            make.height.equalTo(200)
+        }
+        
+        textField.snp.makeConstraints { make in
+            make.top.equalTo(imageViewPhoto.snp.bottom).inset(-16)
+            make.leading.equalTo(contentView.snp.leading)
+            make.trailing.equalTo(contentView.snp.trailing)
+            make.bottom.equalTo(contentView.snp.bottom)
+            make.width.equalTo(contentView.snp.width).inset(16)
+            make.height.equalTo(500)
+        }
+    }
+}
+
+extension DetailViewController: UITextViewDelegate {
+    
+    // MARK: - UITextViewDelegate
+    func textViewDidChange(_ textView: UITextView) {
+        print("Append text")
     }
 }
