@@ -70,10 +70,9 @@ final class DetailViewController: UIViewController {
     private lazy var imageViewPhoto: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
-        image.image = UIImage(named: "satellite")
+        image.image = .LTechImage.satellite
         return image
     }()
-    
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -183,11 +182,10 @@ extension DetailViewController {
         }
         
         textField.snp.makeConstraints { make in
-            make.top.equalTo(imageViewPhoto.snp.bottom).inset(-16)
+            make.top.equalTo(imageViewPhoto.snp.bottom)
             make.leading.equalTo(contentView.snp.leading)
             make.trailing.equalTo(contentView.snp.trailing)
             make.bottom.equalTo(contentView.snp.bottom)
-            make.width.equalTo(contentView.snp.width).inset(16)
             make.height.equalTo(500)
         }
     }

@@ -18,13 +18,14 @@ class UserTabBarViewController: UITabBarController {
     //MARK: - Configure Tabs
     private func configureTabs() {
     
-        let viewControllerFirstTab = HomeViewController()
-        let viewControllerSecondTab = FavoritesViewController()
+        let viewControllerFirstTab = NewsViewController()
+        let viewControllerSecondTab = NewsViewController()
+        viewControllerSecondTab.type = .likes
         let viewControllerThirdTab = ProfileViewController()
         
-        viewControllerFirstTab.tabBarItem.image = UIImage(named: "home")
-        viewControllerSecondTab.tabBarItem.image = UIImage(named: "favorites")
-        viewControllerThirdTab.tabBarItem.image = UIImage(named: "account")
+        viewControllerFirstTab.tabBarItem.image = .LTechImage.home
+        viewControllerSecondTab.tabBarItem.image = .LTechImage.favorites
+        viewControllerThirdTab.tabBarItem.image = .LTechImage.account
         
         viewControllerFirstTab.title = "Главная"
         viewControllerSecondTab.title = "Избранное"

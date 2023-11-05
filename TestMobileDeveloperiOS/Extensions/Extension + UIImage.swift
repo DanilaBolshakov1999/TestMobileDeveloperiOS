@@ -40,5 +40,21 @@ extension UIImage {
         static var home: UIImage? {
             return UIImage(named: "home")
         }
+        
+        static var logoEmblem: UIImage? {
+            return UIImage(named: "logoEmblem")
+        }
+        
+        static var satellite: UIImage? {
+            return UIImage(named: "satellite")
+        }
+        
+//        static var satellite: UIImage? {
+//            return UIImage(named: "satellite")
+//        }
+//        
+//        static var satellite: UIImage? {
+//            return UIImage(named: "satellite")
+//        }
     }
 }

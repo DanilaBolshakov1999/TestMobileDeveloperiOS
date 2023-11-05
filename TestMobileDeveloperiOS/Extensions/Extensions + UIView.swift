@@ -16,4 +16,12 @@ extension UIView {
     func addAutoLayoutSubviews(_ views: UIView...) {
         views.forEach { addAutoLayoutSubview($0) }
     }
+    
+    func addSubviews(_ views: UIView...) {
+        views.forEach({
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            addSubview($0)
+        })
+    }
 }
+

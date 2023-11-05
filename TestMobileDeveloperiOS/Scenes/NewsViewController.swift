@@ -8,7 +8,12 @@
 import UIKit
 import SnapKit
 
-final class HomeViewController: UIViewController {
+enum NewsViewControllerType {
+    case home
+    case likes
+}
+
+final class NewsViewController: UIViewController {
     
     //MARK: - UI
     private lazy var defaultButton: UIButton = {
@@ -27,9 +32,11 @@ final class HomeViewController: UIViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Theme.cell)
+        tableView.register(NewsTableViewCell.self, forCellReuseIdentifier: Theme.newsTableViewCell)
         return tableView
     }()
+    
+    var type: NewsViewControllerType = .home
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -69,7 +76,7 @@ final class HomeViewController: UIViewController {
 }
 
 //MARK: - Set Constrains
-extension HomeViewController {
+extension NewsViewController {
     private func setConstrains() {
         defaultButton.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(100)
@@ -81,25 +88,37 @@ extension HomeViewController {
         
         tableView.snp.makeConstraints { make in
             make.bottom.equalToSuperview().inset(16)
-            make.leading.trailing.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(16)
         }
     }
 }
 
 //MARK: - UITableViewDataSource
-extension HomeViewController: UITableViewDataSource {
+extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        switch type {
+        case .home:
+            return 10
+        case .likes:
+            return 5
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Theme.cell, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Theme.newsTableViewCell, for: indexPath) as? NewsTableViewCell else { return UITableViewCell() }
+        switch type {
+        case .home: break
+//            let model = [indexPath.row]
+//            output.rows[indexPath.row]
+        case .likes: break
+            
+        }
         return cell
     }
 }
 
 //MARK: - UITableViewDelegate
-extension HomeViewController: UITableViewDelegate {
+extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(DetailViewController(), animated: true)
     }

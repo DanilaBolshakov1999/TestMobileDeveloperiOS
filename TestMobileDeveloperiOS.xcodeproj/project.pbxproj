@@ -21,14 +21,20 @@
 		441772522AEAA83B001CE44E /* ImageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441772512AEAA83B001CE44E /* ImageNetwork.swift */; };
 		441772552AEAA9E9001CE44E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 441772542AEAA9E9001CE44E /* AlamofireImage */; };
 		441772592AEAB072001CE44E /* PhoneMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441772582AEAB072001CE44E /* PhoneMask.swift */; };
+		4417725D2AEAE37B001CE44E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417725C2AEAE37B001CE44E /* LoginViewController.swift */; };
+		4417725F2AEAF33F001CE44E /* Extensions + UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417725E2AEAF33F001CE44E /* Extensions + UITextField.swift */; };
+		441772622AEBB20F001CE44E /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441772612AEBB20F001CE44E /* InputField.swift */; };
+		44258B032AED38B9005A8191 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44258B012AED38B9005A8191 /* SF-Pro-Display-Bold.otf */; };
+		44258B042AED38B9005A8191 /* SF-Compact-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44258B022AED38B9005A8191 /* SF-Compact-Display-Heavy.otf */; };
+		44258B062AED48FC005A8191 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44258B052AED48FC005A8191 /* NewsTableViewCell.swift */; };
+		44258B0A2AED5521005A8191 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44258B092AED5521005A8191 /* InputView.swift */; };
 		4437882D2AE81C4900D20667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437882C2AE81C4900D20667 /* AppDelegate.swift */; };
 		4437882F2AE81C4900D20667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437882E2AE81C4900D20667 /* SceneDelegate.swift */; };
-		443788312AE81C4900D20667 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788302AE81C4900D20667 /* HomeViewController.swift */; };
+		443788312AE81C4900D20667 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788302AE81C4900D20667 /* NewsViewController.swift */; };
 		443788432AE8233C00D20667 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 443788422AE8233C00D20667 /* SnapKit */; };
 		443788452AE8233C00D20667 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 443788442AE8233C00D20667 /* SnapKit-Dynamic */; };
 		443788492AE83BCB00D20667 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788482AE83BCB00D20667 /* DetailViewController.swift */; };
 		4437884B2AE8415000D20667 /* UserTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437884A2AE8415000D20667 /* UserTabBarViewController.swift */; };
-		4437884F2AE843DE00D20667 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437884E2AE843DE00D20667 /* FavoritesViewController.swift */; };
 		443788522AE844FA00D20667 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788512AE844FA00D20667 /* ProfileViewController.swift */; };
 		443788552AE860A500D20667 /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788542AE860A500D20667 /* Extension + UIColor.swift */; };
 		443788572AE864B600D20667 /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788562AE864B600D20667 /* Extension + UIFont.swift */; };
@@ -36,6 +42,7 @@
 		4437888D2AE9149400D20667 /* Extension + UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4437888C2AE9149400D20667 /* Extension + UIImage.swift */; };
 		443788912AE9221F00D20667 /* Extensions + UIStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788902AE9221F00D20667 /* Extensions + UIStack.swift */; };
 		443788932AE922C600D20667 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443788922AE922C600D20667 /* Theme.swift */; };
+		446DF55D2AEC0CAD00CA4B57 /* Extensions + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DF55C2AEC0CAD00CA4B57 /* Extensions + UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,16 +57,22 @@
 		4417724F2AEA9EEE001CE44E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		441772512AEAA83B001CE44E /* ImageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetwork.swift; sourceTree = "<group>"; };
 		441772582AEAB072001CE44E /* PhoneMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneMask.swift; sourceTree = "<group>"; };
+		4417725C2AEAE37B001CE44E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4417725E2AEAF33F001CE44E /* Extensions + UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UITextField.swift"; sourceTree = "<group>"; };
+		441772612AEBB20F001CE44E /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		44258B012AED38B9005A8191 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../Downloads/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		44258B022AED38B9005A8191 /* SF-Compact-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Display-Heavy.otf"; path = "../../../../../Downloads/SF-Compact-Display-Heavy.otf"; sourceTree = "<group>"; };
+		44258B052AED48FC005A8191 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		44258B092AED5521005A8191 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		443788292AE81C4900D20667 /* TestMobileDeveloperiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobileDeveloperiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4437882C2AE81C4900D20667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4437882E2AE81C4900D20667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		443788302AE81C4900D20667 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		443788302AE81C4900D20667 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		443788352AE81C4A00D20667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443788382AE81C4A00D20667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4437883A2AE81C4A00D20667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443788482AE83BCB00D20667 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4437884A2AE8415000D20667 /* UserTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarViewController.swift; sourceTree = "<group>"; };
-		4437884E2AE843DE00D20667 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		443788512AE844FA00D20667 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		443788542AE860A500D20667 /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
 		443788562AE864B600D20667 /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
@@ -67,6 +80,7 @@
 		4437888C2AE9149400D20667 /* Extension + UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImage.swift"; sourceTree = "<group>"; };
 		443788902AE9221F00D20667 /* Extensions + UIStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIStack.swift"; sourceTree = "<group>"; };
 		443788922AE922C600D20667 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		446DF55C2AEC0CAD00CA4B57 /* Extensions + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,8 @@
 		441772302AE96051001CE44E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				44258B022AED38B9005A8191 /* SF-Compact-Display-Heavy.otf */,
+				44258B012AED38B9005A8191 /* SF-Pro-Display-Bold.otf */,
 				441772322AE9607C001CE44E /* SF-Pro-Display-Black.otf */,
 				441772342AE9607C001CE44E /* SF-Pro-Display-Medium.otf */,
 				441772392AE9607C001CE44E /* SF-Pro-Display-Regular.otf */,
@@ -100,9 +116,11 @@
 		441772492AEA975F001CE44E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				443788302AE81C4900D20667 /* HomeViewController.swift */,
+				44258B082AED54FE005A8191 /* InputView */,
+				44258B072AED4901005A8191 /* Cells */,
+				4417725C2AEAE37B001CE44E /* LoginViewController.swift */,
+				443788302AE81C4900D20667 /* NewsViewController.swift */,
 				443788482AE83BCB00D20667 /* DetailViewController.swift */,
-				4437884E2AE843DE00D20667 /* FavoritesViewController.swift */,
 				443788512AE844FA00D20667 /* ProfileViewController.swift */,
 				4437888F2AE91F0C00D20667 /* TabBarController */,
 			);
@@ -134,6 +152,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		441772602AEBB1EF001CE44E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				441772612AEBB20F001CE44E /* InputField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		44258B072AED4901005A8191 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44258B052AED48FC005A8191 /* NewsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44258B082AED54FE005A8191 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				44258B092AED5521005A8191 /* InputView.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
 		443788202AE81C4800D20667 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +200,7 @@
 				4417724A2AEA98A5001CE44E /* Managers */,
 				441772562AEAB023001CE44E /* Models */,
 				4417724E2AEA9ED0001CE44E /* Services */,
+				441772602AEBB1EF001CE44E /* Components */,
 				443788532AE85FF000D20667 /* Extensions */,
 				441772302AE96051001CE44E /* Fonts */,
 				4437888E2AE917EC00D20667 /* Assets */,
@@ -183,6 +226,8 @@
 				4437888A2AE9096100D20667 /* Extensions + UIView.swift */,
 				4437888C2AE9149400D20667 /* Extension + UIImage.swift */,
 				443788902AE9221F00D20667 /* Extensions + UIStack.swift */,
+				4417725E2AEAF33F001CE44E /* Extensions + UITextField.swift */,
+				446DF55C2AEC0CAD00CA4B57 /* Extensions + UIButton.swift */,
 				443788922AE922C600D20667 /* Theme.swift */,
 			);
 			path = Extensions;
@@ -277,7 +322,9 @@
 				441772432AE96275001CE44E /* SF-Pro-Display-Semibold.otf in Resources */,
 				441772442AE96275001CE44E /* SF-Pro-Text-Medium.otf in Resources */,
 				441772452AE96275001CE44E /* SF-Pro-Text-Regular.otf in Resources */,
+				44258B042AED38B9005A8191 /* SF-Compact-Display-Heavy.otf in Resources */,
 				441772462AE96275001CE44E /* SF-Pro-Text-Semibold.otf in Resources */,
+				44258B032AED38B9005A8191 /* SF-Pro-Display-Bold.otf in Resources */,
 				4417723D2AE96231001CE44E /* SF-Pro-Display-Black.otf in Resources */,
 				4417723F2AE96249001CE44E /* Assets.xcassets in Resources */,
 				4417723E2AE96245001CE44E /* LaunchScreen.storyboard in Resources */,
@@ -291,19 +338,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4417725D2AEAE37B001CE44E /* LoginViewController.swift in Sources */,
 				4437884B2AE8415000D20667 /* UserTabBarViewController.swift in Sources */,
 				443788912AE9221F00D20667 /* Extensions + UIStack.swift in Sources */,
+				441772622AEBB20F001CE44E /* InputField.swift in Sources */,
 				4437888D2AE9149400D20667 /* Extension + UIImage.swift in Sources */,
-				443788312AE81C4900D20667 /* HomeViewController.swift in Sources */,
+				443788312AE81C4900D20667 /* NewsViewController.swift in Sources */,
 				443788932AE922C600D20667 /* Theme.swift in Sources */,
 				4437882D2AE81C4900D20667 /* AppDelegate.swift in Sources */,
 				4437882F2AE81C4900D20667 /* SceneDelegate.swift in Sources */,
+				44258B0A2AED5521005A8191 /* InputView.swift in Sources */,
 				4417724D2AEA9B7C001CE44E /* NetworkSession.swift in Sources */,
 				443788522AE844FA00D20667 /* ProfileViewController.swift in Sources */,
+				4417725F2AEAF33F001CE44E /* Extensions + UITextField.swift in Sources */,
+				44258B062AED48FC005A8191 /* NewsTableViewCell.swift in Sources */,
 				443788552AE860A500D20667 /* Extension + UIColor.swift in Sources */,
+				446DF55D2AEC0CAD00CA4B57 /* Extensions + UIButton.swift in Sources */,
 				441772522AEAA83B001CE44E /* ImageNetwork.swift in Sources */,
 				4437888B2AE9096200D20667 /* Extensions + UIView.swift in Sources */,
-				4437884F2AE843DE00D20667 /* FavoritesViewController.swift in Sources */,
 				441772502AEA9EEE001CE44E /* AuthService.swift in Sources */,
 				441772592AEAB072001CE44E /* PhoneMask.swift in Sources */,
 				443788572AE864B600D20667 /* Extension + UIFont.swift in Sources */,

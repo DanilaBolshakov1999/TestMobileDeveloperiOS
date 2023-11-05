@@ -5,6 +5,8 @@
 //  Created by Danila Bolshakov on 25.10.2023.
 //
 
-struct Theme {
-    static let cell = "Cell"
+import UIKit
+
+enum Theme {
+    static let newsTableViewCell = "NewsTableViewCell"
 }

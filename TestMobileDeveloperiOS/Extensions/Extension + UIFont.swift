@@ -52,7 +52,7 @@ extension UIFont {
     enum TextFont {
         enum Bold {
             static func size(of size: CGFloat) -> UIFont {
-                return UIFont(name: SystemFonts.Text.regular, size: size) ?? UIFont()
+                return UIFont(name: SystemFonts.Display.bold, size: size) ?? UIFont()
             }
         }
         
@@ -70,21 +70,21 @@ extension UIFont {
     }
 }
 
-private extension UIFont {
+extension UIFont {
     enum SystemFonts {
         enum Display {
-            static let regular = "SF-Pro-Display-Regular"
-            static let bold = "SF-Pro-Display-Bold"
-            static let medium = "SF-Pro-Display-Medium"
-            static let semibold = "SF-Pro-Display-Semibold"
-            static let heavy = "SF-Compact-Display-Heavy"
-            static let black = "SF-Pro-Display-Black"
+            static let regular = "SFProDisplay-Regular"
+            static let bold = "SFProDisplay-Bold"
+            static let medium = "SFProDisplay-Medium"
+            static let semibold = "SFProDisplay-Semibold"
+            static let heavy = "SFCompactDisplay-Heavy"
+            static let black = "SFProDisplay-Black"
         }
         
         enum Text {
-            static let regular = "SF-Pro-Text-Regular"
-            static let semibold = "SF-Pro-Text-Semibold"
-            static let medium = "SF-Pro-Text-Medium"
+            static let regular = "SFProText-Regular"
+            static let semibold = "SFProText-Semibold"
+            static let medium = "SFProText-Medium"
         }
     }
 }
