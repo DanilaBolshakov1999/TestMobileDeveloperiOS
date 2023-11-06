@@ -5,16 +5,15 @@
 //  Created by Danila Bolshakov on 26.10.2023.
 //
 
-import UIKit
+import UIKit.UITextField
 
 extension UITextField {
-    
     convenience init(hasBorder: Bool, backgroundColor: UIColor?, cornerRadius: CGFloat, placeholder: String) {
         self.init()
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = cornerRadius
         self.placeholder = placeholder
-        self.textColor = .LTech.blackColor
+        self.textColor = .LTech.customBlackColor
         self.font = .DisplayFont.Regular.size(of: 17)
         
         if hasBorder {
@@ -81,5 +80,4 @@ extension UITextField {
         self.rightView = paddingView
         self.rightViewMode = .always
     }
-    
 }

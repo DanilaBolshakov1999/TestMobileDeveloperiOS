@@ -37,7 +37,6 @@ class UserTabBarViewController: UITabBarController {
         
         tabBar.backgroundColor = .white
         
-        
         setViewControllers([viewControllerFirst, viewControllerSecond, viewControllerThird], animated: true)
     }
 }

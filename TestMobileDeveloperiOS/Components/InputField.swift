@@ -22,7 +22,7 @@ final class InputField: UIView {
     private lazy var nameInput: UILabel = {
         let label = UILabel()
         label.text = title
-        label.textColor = .LTech.blackColor
+        label.textColor = .LTech.customBlackColor
         label.font = .TextFont.Bold.size(of: 20)
         return label
     }()

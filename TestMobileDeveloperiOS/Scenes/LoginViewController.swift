@@ -26,22 +26,22 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private lazy var phoneTextField: InputView = {
-        let field = InputView()
+    private lazy var phoneTextField: InputViewCustom = {
+        let field = InputViewCustom()
         field.style = .phone
         return field
     }()
     
-    private lazy var passwordTextField: InputView = {
-        let field = InputView()
+    private lazy var passwordTextField: InputViewCustom = {
+        let field = InputViewCustom()
         field.style = .password
         return field
     }()
 
     private let buttonSingIn = UIButton(
         text: "Войти",
-        textColor: .LTech.whiteColor,
-        backgroundColor: .LTech.blueColor,
+        textColor: .LTech.customWhiteColor,
+        backgroundColor: .LTech.customBlueColor,
         cornerRadius: 16)
 
     //MARK: - Life Cycle
@@ -50,7 +50,7 @@ final class LoginViewController: UIViewController {
         setViews()
         saveAddTarget()
         setConstrains()
-        view.backgroundColor = .LTech.whiteColor
+        view.backgroundColor = .LTech.customWhiteColor
     }
     
     //MARK: - Set Views
@@ -73,6 +73,7 @@ final class LoginViewController: UIViewController {
 //MARK: - Set Constrains
 extension LoginViewController {
     private func setConstrains() {
+        
         imageLogo.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(36)
             make.centerX.equalTo(view.snp.centerX)

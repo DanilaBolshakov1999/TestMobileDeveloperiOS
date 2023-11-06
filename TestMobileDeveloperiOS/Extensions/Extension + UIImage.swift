@@ -48,13 +48,5 @@ extension UIImage {
         static var satellite: UIImage? {
             return UIImage(named: "satellite")
         }
-        
-//        static var satellite: UIImage? {
-//            return UIImage(named: "satellite")
-//        }
-//        
-//        static var satellite: UIImage? {
-//            return UIImage(named: "satellite")
-//        }
     }
 }

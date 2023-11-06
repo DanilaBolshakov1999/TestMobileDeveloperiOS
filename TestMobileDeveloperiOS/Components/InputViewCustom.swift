@@ -13,20 +13,22 @@ enum InputViewStyle {
     case password
 }
 
-final class InputView: UIView {
+final class InputViewCustom: UIView {
     
     //MARK: - UI
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var inputField: UITextField = {
         let field = UITextField()
+        field.translatesAutoresizingMaskIntoConstraints = false
         return field
     }()
     
-    var style: InputViewStyle = .phone
+    var style: InputViewStyle = .password
     
     //MARK: - Life Cycle
     override init(frame: CGRect) {
@@ -40,16 +42,15 @@ final class InputView: UIView {
     }
     
     private func setupViews() {
-        
         switch style {
         case .phone:
             titleLabel.text = "Телефон"
             inputField.clearButtonMode = .always
         case .password:
             titleLabel.text = "Пароль"
+            inputField.keyboardType = .emailAddress
             inputField.isSecureTextEntry = true
         }
-        
         addSubview(titleLabel)
         addSubview(inputField)
     }

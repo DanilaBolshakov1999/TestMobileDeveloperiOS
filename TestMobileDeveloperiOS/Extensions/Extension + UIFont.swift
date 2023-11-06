@@ -9,7 +9,6 @@ import UIKit.UIFont
 
 extension UIFont {
     
-    //MARK: - Display Font
     enum DisplayFont {
         enum Regular {
             static func size(of size: CGFloat) -> UIFont {

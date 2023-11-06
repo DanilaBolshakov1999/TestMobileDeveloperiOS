@@ -18,7 +18,7 @@ final class NewsViewController: UIViewController {
     //MARK: - UI
     private lazy var defaultButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .LTech.whiteColor
+        button.backgroundColor = .LTech.customWhiteColor
         button.setImage(.LTechImage.defaultButton, for: .normal)
         button.addTarget(self, action: #selector(defaultButtonTapped), for: .touchUpInside)
         return button
@@ -44,7 +44,7 @@ final class NewsViewController: UIViewController {
         setViews()
         setConstrains()
         configureItems()
-        view.backgroundColor = .LTech.whiteColor
+        view.backgroundColor = .LTech.customWhiteColor
     }
     
     //MARK: - Set Views

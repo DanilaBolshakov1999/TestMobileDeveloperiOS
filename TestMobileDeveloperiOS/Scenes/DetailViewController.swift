@@ -13,7 +13,7 @@ final class DetailViewController: UIViewController {
     //MARK: - Unification UI
     private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.backgroundColor = .LTech.whiteColor
+        view.backgroundColor = .LTech.customWhiteColor
         view.showsVerticalScrollIndicator = false
         return view
     }()
@@ -47,14 +47,14 @@ final class DetailViewController: UIViewController {
     private lazy var labelDate: UILabel = {
         let label = UILabel()
         label.text = "05 декабря"
-        label.textColor = .LTech.grayColor
+        label.textColor = .LTech.customGrayColor
         return label
     }()
     
     private lazy var labelTime: UILabel = {
         let label = UILabel()
         label.text = "19:40"
-        label.textColor = .LTech.grayColor
+        label.textColor = .LTech.customGrayColor
         return label
     }()
     
@@ -62,7 +62,7 @@ final class DetailViewController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.text = "Отчёт Лаборатории реактивного движения (JPL)"
-        label.textColor = .LTech.blackColor
+        label.textColor = .LTech.customBlackColor
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
