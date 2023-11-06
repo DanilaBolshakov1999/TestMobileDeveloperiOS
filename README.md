@@ -8,6 +8,6 @@
 
 ---
 
-<img scr="https://github.com/DanilaBolshakov1999/TestMobileDeveloperiOS/assets/47753945/5e39c7f0-e815-48df-bc28-8d7dac5a91da" widht="200" height="500" />
+<img src="https://github.com/DanilaBolshakov1999/TestMobileDeveloperiOS/assets/47753945/5e39c7f0-e815-48df-bc28-8d7dac5a91da" width="200" height="500" />
 
 ---
