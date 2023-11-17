@@ -13,6 +13,7 @@ class UserTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTabs()
+        
     }
     
     //MARK: - Configure Tabs
